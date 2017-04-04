@@ -1,0 +1,705 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/guyonroche/exceljs#readme"
+
+    >exceljs (v0.4.2)</a>
+</h1>
+<h4>Excel Workbook Manager - Read and Write xlsx and csv Files.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.exceljs">module exceljs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.ModelContainer">
+            function <span class="apidocSignatureSpan">exceljs.</span>ModelContainer
+            <span class="apidocSignatureSpan">(model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook">
+            function <span class="apidocSignatureSpan">exceljs.</span>Workbook
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>DocumentType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>ErrorValue</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>ReadingOrder</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>RelationshipType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>ValueType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>Workbook.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>exceljs_browser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.</span>stream</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.exceljs.Workbook">module exceljs.Workbook</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.Workbook">
+            function <span class="apidocSignatureSpan">exceljs.</span>Workbook
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.exceljs.Workbook.prototype">module exceljs.Workbook.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype._removeWorksheet">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>_removeWorksheet
+            <span class="apidocSignatureSpan">(worksheet)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype.addWorksheet">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>addWorksheet
+            <span class="apidocSignatureSpan">(name, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype.clearThemes">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>clearThemes
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype.eachSheet">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>eachSheet
+            <span class="apidocSignatureSpan">(iteratee)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype.getWorksheet">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>getWorksheet
+            <span class="apidocSignatureSpan">(id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.Workbook.prototype.removeWorksheet">
+            function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>removeWorksheet
+            <span class="apidocSignatureSpan">(id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>_csv</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>_xlsx</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>csv</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>xlsx</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.exceljs.config">module exceljs.config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.config.setValue">
+            function <span class="apidocSignatureSpan">exceljs.config.</span>setValue
+            <span class="apidocSignatureSpan">(key, value, overwrite)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.exceljs.exceljs_browser">module exceljs.exceljs_browser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.exceljs.exceljs_browser.Workbook">
+            function <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>Workbook
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>DocumentType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>ErrorValue</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>ReadingOrder</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>RelationshipType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>ValueType</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.exceljs" id="apidoc.module.exceljs">module exceljs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.ModelContainer" id="apidoc.element.exceljs.ModelContainer">
+        function <span class="apidocSignatureSpan">exceljs.</span>ModelContainer
+        <span class="apidocSignatureSpan">(model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ModelContainer = function (model) {
+  this.model = model;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook" id="apidoc.element.exceljs.Workbook">
+        function <span class="apidocSignatureSpan">exceljs.</span>Workbook
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Workbook = function () {
+  this.created = new Date();
+  this.modified = this.created;
+  this.properties = {};
+  this._worksheets = [];
+  this.views = [];
+  this._definedNames = new DefinedNames();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var Excel = require(&#x27;exceljs&#x27;);
+```
+
+## Create a Workbook
+
+```javascript
+var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
+```
+
+## Set Workbook Properties
+
+```javascript
+workbook.creator = &#x27;Me&#x27;;
+workbook.lastModifiedBy = &#x27;Her&#x27;;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.exceljs.Workbook" id="apidoc.module.exceljs.Workbook">module exceljs.Workbook</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.Workbook" id="apidoc.element.exceljs.Workbook.Workbook">
+        function <span class="apidocSignatureSpan">exceljs.</span>Workbook
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Workbook = function () {
+  this.created = new Date();
+  this.modified = this.created;
+  this.properties = {};
+  this._worksheets = [];
+  this.views = [];
+  this._definedNames = new DefinedNames();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var Excel = require(&#x27;exceljs&#x27;);
+```
+
+## Create a Workbook
+
+```javascript
+var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
+```
+
+## Set Workbook Properties
+
+```javascript
+workbook.creator = &#x27;Me&#x27;;
+workbook.lastModifiedBy = &#x27;Her&#x27;;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.exceljs.Workbook.prototype" id="apidoc.module.exceljs.Workbook.prototype">module exceljs.Workbook.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype._removeWorksheet" id="apidoc.element.exceljs.Workbook.prototype._removeWorksheet">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>_removeWorksheet
+        <span class="apidocSignatureSpan">(worksheet)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_removeWorksheet = function (worksheet) {
+  delete this._worksheets[worksheet.id];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype.addWorksheet" id="apidoc.element.exceljs.Workbook.prototype.addWorksheet">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>addWorksheet
+        <span class="apidocSignatureSpan">(name, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addWorksheet = function (name, options) {
+
+  var id = this.nextId;
+  name = name || &#x27;sheet&#x27; + id;
+
+  // if options is a color, call it tabColor (and signal deprecated message)
+  if (options) {
+    if (typeof options === &#x27;string&#x27;) {
+      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
+: &#x22;rbg value&#x22; } }&#x27;);
+      options = {
+        properties: {
+          tabColor: {argb: options}
+        }
+      };
+    } else if (options.argb || options.theme || options.indexed) {
+      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }&#x27;);
+      options = {
+        properties: {
+          tabColor: options
+        }
+      };
+    }
+  }
+
+  var worksheetOptions = Object.assign({}, options, {
+    id: id,
+    name: name,
+    workbook: this
+  });
+
+  var worksheet = new Worksheet(worksheetOptions);
+
+  this._worksheets[id] = worksheet;
+  return worksheet;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+]
+```
+
+## Add a Worksheet
+
+```javascript
+var sheet = workbook.<span class="apidocCodeKeywordSpan">addWorksheet</span>(&#x27;My Sheet&#x27;);
+```
+
+Use the second parameter of the addWorksheet function to specify options for the worksheet.
+
+For Example:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype.clearThemes" id="apidoc.element.exceljs.Workbook.prototype.clearThemes">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>clearThemes
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearThemes = function () {
+  // Note: themes are not an exposed feature, meddle at your peril!
+  this._themes = undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype.eachSheet" id="apidoc.element.exceljs.Workbook.prototype.eachSheet">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>eachSheet
+        <span class="apidocSignatureSpan">(iteratee)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">eachSheet = function (iteratee) {
+  this._worksheets.forEach(function(sheet) {
+    iteratee(sheet, sheet.id);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var sheet = workbook.addWorksheet(&#x27;My Sheet&#x27;, {views:[{xSplit: 1, ySplit:1}]});
+```
+
+## Access Worksheets
+```javascript
+// Iterate over all sheets
+// Note: workbook.worksheets.forEach will still work but this is better
+workbook.<span class="apidocCodeKeywordSpan">eachSheet</span>(function(worksheet, sheetId) {
+    // ...
+});
+
+// fetch sheet by name
+var worksheet = workbook.getWorksheet(&#x27;My Sheet&#x27;);
+
+// fetch sheet by id
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype.getWorksheet" id="apidoc.element.exceljs.Workbook.prototype.getWorksheet">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>getWorksheet
+        <span class="apidocSignatureSpan">(id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getWorksheet = function (id) {
+  if (id === undefined) {
+    return this._worksheets.find(function(worksheet) { return worksheet; });
+  } else if (typeof(id) === &#x27;number&#x27;) {
+    return this._worksheets[id];
+  } else if (typeof id === &#x27;string&#x27;) {
+    return this._worksheets.find(function(worksheet) {
+      return worksheet &#x26;&#x26; worksheet.name == id;
+    });
+  } else {
+    return undefined;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// Iterate over all sheets
+// Note: workbook.worksheets.forEach will still work but this is better
+workbook.eachSheet(function(worksheet, sheetId) {
+    // ...
+});
+
+// fetch sheet by name
+var worksheet = workbook.<span class="apidocCodeKeywordSpan">getWorksheet</span>(&#x27;My Sheet&#x27;);
+
+// fetch sheet by id
+var worksheet = workbook.getWorksheet(1);
+```
+
+## Worksheet Properties
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.Workbook.prototype.removeWorksheet" id="apidoc.element.exceljs.Workbook.prototype.removeWorksheet">
+        function <span class="apidocSignatureSpan">exceljs.Workbook.prototype.</span>removeWorksheet
+        <span class="apidocSignatureSpan">(id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeWorksheet = function (id) {
+  var worksheet = this.getWorksheet(id);
+  if (worksheet) {
+    worksheet.destroy();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.exceljs.config" id="apidoc.module.exceljs.config">module exceljs.config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.config.setValue" id="apidoc.element.exceljs.config.setValue">
+        function <span class="apidocSignatureSpan">exceljs.config.</span>setValue
+        <span class="apidocSignatureSpan">(key, value, overwrite)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setValue(key, value, overwrite) {
+  if (overwrite === undefined) {
+    // only avoid overwrite if explicitly disabled
+    overwrite = true;
+  }
+  switch(key.toLowerCase()) {
+    case &#x27;promise&#x27;:
+      if (!overwrite &#x26;&#x26; PromishLib.Promish) return;
+      PromishLib.Promish = value;
+      break;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+# Config
+
+ExcelJS now supports dependency injection for the promise library.
+ You can restore Bluebird promises by including the following code in your module...
+
+```javascript
+ExcelJS.config.<span class="apidocCodeKeywordSpan">setValue</span>(&#x27;promise&#x27;, require(&#x27;bluebird&#x27;));
+```
+
+Please note: I have tested ExcelJS with bluebird specifically (since up until recently this was the library it used).
+ From the tests I have done it will not work with Q.
+
+# Known Issues
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.exceljs.exceljs_browser" id="apidoc.module.exceljs.exceljs_browser">module exceljs.exceljs_browser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.exceljs.exceljs_browser.Workbook" id="apidoc.element.exceljs.exceljs_browser.Workbook">
+        function <span class="apidocSignatureSpan">exceljs.exceljs_browser.</span>Workbook
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Workbook = function () {
+  this.created = new Date();
+  this.modified = this.created;
+  this.properties = {};
+  this._worksheets = [];
+  this.views = [];
+  this._definedNames = new DefinedNames();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var Excel = require(&#x27;exceljs&#x27;);
+```
+
+## Create a Workbook
+
+```javascript
+var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
+```
+
+## Set Workbook Properties
+
+```javascript
+workbook.creator = &#x27;Me&#x27;;
+workbook.lastModifiedBy = &#x27;Her&#x27;;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
