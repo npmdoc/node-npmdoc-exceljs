@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/guyonroche/exceljs#readme"
-
-    >exceljs (v0.4.3)</a>
+    <a href="https://github.com/guyonroche/exceljs#readme">exceljs (v0.4.3)</a>
 </h1>
 <h4>Excel Workbook Manager - Read and Write xlsx and csv Files.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.exceljs">module exceljs</a><ol>
 
@@ -491,7 +484,7 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var Excel = require(&#x27;exceljs&#x27;);
+var Excel = require('exceljs');
 ```
 
 ## Create a Workbook
@@ -503,8 +496,8 @@ var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
 ## Set Workbook Properties
 
 ```javascript
-workbook.creator = &#x27;Me&#x27;;
-workbook.lastModifiedBy = &#x27;Her&#x27;;
+workbook.creator = 'Me';
+workbook.lastModifiedBy = 'Her';
 ...</pre></li>
     </ul>
 
@@ -535,20 +528,20 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
     <li>description and source-code<pre class="apidocCodePre">Workbook.prototype.addWorksheet = function (name, options) {
 
   var id = this.nextId;
-  name = name || &#x27;sheet&#x27; + id;
+  name = name || 'sheet' + id;
 
   // if options is a color, call it tabColor (and signal deprecated message)
   if (options) {
-    if (typeof options === &#x27;string&#x27;) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
-: &#x22;rbg value&#x22; } }&#x27;);
+    if (typeof options === 'string') {
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
+: "rbg value" } }');
       options = {
         properties: {
           tabColor: {argb: options}
         }
       };
     } else if (options.argb || options.theme || options.indexed) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }&#x27;);
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }');
       options = {
         properties: {
           tabColor: options
@@ -616,11 +609,11 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
     <li>description and source-code<pre class="apidocCodePre">Workbook.prototype.getWorksheet = function (id) {
   if (id === undefined) {
     return this._worksheets.find(function(worksheet) { return worksheet; });
-  } else if (typeof(id) === &#x27;number&#x27;) {
+  } else if (typeof(id) === 'number') {
     return this._worksheets[id];
-  } else if (typeof id === &#x27;string&#x27;) {
+  } else if (typeof id === 'string') {
     return this._worksheets.find(function(worksheet) {
-      return worksheet &#x26;&#x26; worksheet.name == id;
+      return worksheet &amp;&amp; worksheet.name == id;
     });
   } else {
     return undefined;
@@ -662,8 +655,8 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
     overwrite = true;
   }
   switch(key.toLowerCase()) {
-    case &#x27;promise&#x27;:
-      if (!overwrite &#x26;&#x26; PromishLib.Promish) return;
+    case 'promise':
+      if (!overwrite &amp;&amp; PromishLib.Promish) return;
       PromishLib.Promish = value;
       break;
   }
@@ -676,7 +669,7 @@ ExcelJS now supports dependency injection for the promise library.
  You can restore Bluebird promises by including the following code in your module...
 
 ```javascript
-ExcelJS.<span class="apidocCodeKeywordSpan">config.setValue</span>(&#x27;promise&#x27;, require(&#x27;bluebird&#x27;));
+ExcelJS.<span class="apidocCodeKeywordSpan">config.setValue</span>('promise', require('bluebird'));
 ```
 
 Please note: I have tested ExcelJS with bluebird specifically (since up until recently this was the library it used).
@@ -748,7 +741,7 @@ Please note: I have tested ExcelJS with bluebird specifically (since up until re
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var Excel = require(&#x27;exceljs&#x27;);
+var Excel = require('exceljs');
 ```
 
 ## Create a Workbook
@@ -760,8 +753,8 @@ var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
 ## Set Workbook Properties
 
 ```javascript
-workbook.creator = &#x27;Me&#x27;;
-workbook.lastModifiedBy = &#x27;Her&#x27;;
+workbook.creator = 'Me';
+workbook.lastModifiedBy = 'Her';
 ...</pre></li>
     </ul>
 
@@ -797,20 +790,20 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
     <li>description and source-code<pre class="apidocCodePre">addWorksheet = function (name, options) {
 
   var id = this.nextId;
-  name = name || &#x27;sheet&#x27; + id;
+  name = name || 'sheet' + id;
 
   // if options is a color, call it tabColor (and signal deprecated message)
   if (options) {
-    if (typeof options === &#x27;string&#x27;) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
-: &#x22;rbg value&#x22; } }&#x27;);
+    if (typeof options === 'string') {
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
+: "rbg value" } }');
       options = {
         properties: {
           tabColor: {argb: options}
         }
       };
     } else if (options.argb || options.theme || options.indexed) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }&#x27;);
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }');
       options = {
         properties: {
           tabColor: options
@@ -838,7 +831,7 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
 ## Add a Worksheet
 
 ```javascript
-var sheet = workbook.<span class="apidocCodeKeywordSpan">addWorksheet</span>(&#x27;My Sheet&#x27;);
+var sheet = workbook.<span class="apidocCodeKeywordSpan">addWorksheet</span>('My Sheet');
 ```
 
 Use the second parameter of the addWorksheet function to specify options for the worksheet.
@@ -880,7 +873,7 @@ For Example:
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var sheet = workbook.addWorksheet(&#x27;My Sheet&#x27;, {views:[{xSplit: 1, ySplit:1}]});
+var sheet = workbook.addWorksheet('My Sheet', {views:[{xSplit: 1, ySplit:1}]});
 ```
 
 ## Access Worksheets
@@ -892,7 +885,7 @@ workbook.<span class="apidocCodeKeywordSpan">eachSheet</span>(function(worksheet
 });
 
 // fetch sheet by name
-var worksheet = workbook.getWorksheet(&#x27;My Sheet&#x27;);
+var worksheet = workbook.getWorksheet('My Sheet');
 
 // fetch sheet by id
 ...</pre></li>
@@ -910,11 +903,11 @@ var worksheet = workbook.getWorksheet(&#x27;My Sheet&#x27;);
     <li>description and source-code<pre class="apidocCodePre">getWorksheet = function (id) {
   if (id === undefined) {
     return this._worksheets.find(function(worksheet) { return worksheet; });
-  } else if (typeof(id) === &#x27;number&#x27;) {
+  } else if (typeof(id) === 'number') {
     return this._worksheets[id];
-  } else if (typeof id === &#x27;string&#x27;) {
+  } else if (typeof id === 'string') {
     return this._worksheets.find(function(worksheet) {
-      return worksheet &#x26;&#x26; worksheet.name == id;
+      return worksheet &amp;&amp; worksheet.name == id;
     });
   } else {
     return undefined;
@@ -928,7 +921,7 @@ workbook.eachSheet(function(worksheet, sheetId) {
 });
 
 // fetch sheet by name
-var worksheet = workbook.<span class="apidocCodeKeywordSpan">getWorksheet</span>(&#x27;My Sheet&#x27;);
+var worksheet = workbook.<span class="apidocCodeKeywordSpan">getWorksheet</span>('My Sheet');
 
 // fetch sheet by id
 var worksheet = workbook.getWorksheet(1);
@@ -1001,20 +994,20 @@ var worksheet = workbook.getWorksheet(1);
     <li>description and source-code<pre class="apidocCodePre">addWorksheet = function (name, options) {
 
   var id = this.nextId;
-  name = name || &#x27;sheet&#x27; + id;
+  name = name || 'sheet' + id;
 
   // if options is a color, call it tabColor (and signal deprecated message)
   if (options) {
-    if (typeof options === &#x27;string&#x27;) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
-: &#x22;rbg value&#x22; } }&#x27;);
+    if (typeof options === 'string') {
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { argb
+: "rbg value" } }');
       options = {
         properties: {
           tabColor: {argb: options}
         }
       };
     } else if (options.argb || options.theme || options.indexed) {
-      console.trace(&#x27;tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }&#x27;);
+      console.trace('tabColor argument is now deprecated. Please use workbook.addWorksheet(name, {properties: { tabColor: { ... } }');
       options = {
         properties: {
           tabColor: options
@@ -1042,7 +1035,7 @@ var worksheet = workbook.getWorksheet(1);
 ## Add a Worksheet
 
 ```javascript
-var sheet = workbook.<span class="apidocCodeKeywordSpan">addWorksheet</span>(&#x27;My Sheet&#x27;);
+var sheet = workbook.<span class="apidocCodeKeywordSpan">addWorksheet</span>('My Sheet');
 ```
 
 Use the second parameter of the addWorksheet function to specify options for the worksheet.
@@ -1094,7 +1087,7 @@ For Example:
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var sheet = workbook.addWorksheet(&#x27;My Sheet&#x27;, {views:[{xSplit: 1, ySplit:1}]});
+var sheet = workbook.addWorksheet('My Sheet', {views:[{xSplit: 1, ySplit:1}]});
 ```
 
 ## Access Worksheets
@@ -1106,7 +1099,7 @@ workbook.<span class="apidocCodeKeywordSpan">eachSheet</span>(function(worksheet
 });
 
 // fetch sheet by name
-var worksheet = workbook.getWorksheet(&#x27;My Sheet&#x27;);
+var worksheet = workbook.getWorksheet('My Sheet');
 
 // fetch sheet by id
 ...</pre></li>
@@ -1129,11 +1122,11 @@ var worksheet = workbook.getWorksheet(&#x27;My Sheet&#x27;);
     <li>description and source-code<pre class="apidocCodePre">getWorksheet = function (id) {
   if (id === undefined) {
     return this._worksheets.find(function(worksheet) { return worksheet; });
-  } else if (typeof(id) === &#x27;number&#x27;) {
+  } else if (typeof(id) === 'number') {
     return this._worksheets[id];
-  } else if (typeof id === &#x27;string&#x27;) {
+  } else if (typeof id === 'string') {
     return this._worksheets.find(function(worksheet) {
-      return worksheet &#x26;&#x26; worksheet.name == id;
+      return worksheet &amp;&amp; worksheet.name == id;
     });
   } else {
     return undefined;
@@ -1147,7 +1140,7 @@ workbook.eachSheet(function(worksheet, sheetId) {
 });
 
 // fetch sheet by name
-var worksheet = workbook.<span class="apidocCodeKeywordSpan">getWorksheet</span>(&#x27;My Sheet&#x27;);
+var worksheet = workbook.<span class="apidocCodeKeywordSpan">getWorksheet</span>('My Sheet');
 
 // fetch sheet by id
 var worksheet = workbook.getWorksheet(1);
@@ -1200,8 +1193,8 @@ var worksheet = workbook.getWorksheet(1);
     overwrite = true;
   }
   switch(key.toLowerCase()) {
-    case &#x27;promise&#x27;:
-      if (!overwrite &#x26;&#x26; PromishLib.Promish) return;
+    case 'promise':
+      if (!overwrite &amp;&amp; PromishLib.Promish) return;
       PromishLib.Promish = value;
       break;
   }
@@ -1214,7 +1207,7 @@ ExcelJS now supports dependency injection for the promise library.
  You can restore Bluebird promises by including the following code in your module...
 
 ```javascript
-ExcelJS.config.<span class="apidocCodeKeywordSpan">setValue</span>(&#x27;promise&#x27;, require(&#x27;bluebird&#x27;));
+ExcelJS.config.<span class="apidocCodeKeywordSpan">setValue</span>('promise', require('bluebird'));
 ```
 
 Please note: I have tested ExcelJS with bluebird specifically (since up until recently this was the library it used).
@@ -1244,8 +1237,8 @@ Please note: I have tested ExcelJS with bluebird specifically (since up until re
     overwrite = true;
   }
   switch(key.toLowerCase()) {
-    case &#x27;promise&#x27;:
-      if (!overwrite &#x26;&#x26; PromishLib.Promish) return;
+    case 'promise':
+      if (!overwrite &amp;&amp; PromishLib.Promish) return;
       PromishLib.Promish = value;
       break;
   }
@@ -1258,7 +1251,7 @@ ExcelJS now supports dependency injection for the promise library.
  You can restore Bluebird promises by including the following code in your module...
 
 ```javascript
-ExcelJS.config.<span class="apidocCodeKeywordSpan">setValue</span>(&#x27;promise&#x27;, require(&#x27;bluebird&#x27;));
+ExcelJS.config.<span class="apidocCodeKeywordSpan">setValue</span>('promise', require('bluebird'));
 ```
 
 Please note: I have tested ExcelJS with bluebird specifically (since up until recently this was the library it used).
@@ -1292,7 +1285,7 @@ Please note: I have tested ExcelJS with bluebird specifically (since up until re
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var Excel = require(&#x27;exceljs&#x27;);
+var Excel = require('exceljs');
 ```
 
 ## Create a Workbook
@@ -1304,8 +1297,8 @@ var workbook = new Excel.<span class="apidocCodeKeywordSpan">Workbook</span>();
 ## Set Workbook Properties
 
 ```javascript
-workbook.creator = &#x27;Me&#x27;;
-workbook.lastModifiedBy = &#x27;Her&#x27;;
+workbook.creator = 'Me';
+workbook.lastModifiedBy = 'Her';
 ...</pre></li>
     </ul>
 
@@ -1328,3 +1321,4 @@ workbook.lastModifiedBy = &#x27;Her&#x27;;
     ]
 </div>
 </div>
+</body></html>

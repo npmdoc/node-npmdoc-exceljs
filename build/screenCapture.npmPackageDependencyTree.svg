@@ -1,86 +1,94 @@
-<svg height="1326" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="1326" fill="#555" width="720"></rect>
+<svg height="1454" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1454" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">└─┬ exceljs@0.4.2 </tspan>
-<tspan x="10" y="42">  ├─┬ archiver@1.3.0 </tspan>
-<tspan x="10" y="58">  │ ├─┬ archiver-utils@1.3.0 </tspan>
-<tspan x="10" y="74">  │ │ ├── graceful-fs@4.1.11 </tspan>
-<tspan x="10" y="90">  │ │ ├── lazystream@1.0.0 </tspan>
-<tspan x="10" y="106">  │ │ └─┬ normalize-path@2.1.1 </tspan>
-<tspan x="10" y="122">  │ │   └── remove-trailing-separator@1.0.1 </tspan>
-<tspan x="10" y="138">  │ ├── async@2.3.0 </tspan>
-<tspan x="10" y="154">  │ ├── buffer-crc32@0.2.13 </tspan>
-<tspan x="10" y="170">  │ ├─┬ glob@7.1.1 </tspan>
-<tspan x="10" y="186">  │ │ ├── fs.realpath@1.0.0 </tspan>
-<tspan x="10" y="202">  │ │ ├─┬ inflight@1.0.6 </tspan>
-<tspan x="10" y="218">  │ │ │ └── wrappy@1.0.2 </tspan>
-<tspan x="10" y="234">  │ │ ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="250">  │ │ ├─┬ minimatch@3.0.3 </tspan>
-<tspan x="10" y="266">  │ │ │ └─┬ brace-expansion@1.1.6 </tspan>
-<tspan x="10" y="282">  │ │ │   ├── balanced-match@0.4.2 </tspan>
-<tspan x="10" y="298">  │ │ │   └── concat-map@0.0.1 </tspan>
-<tspan x="10" y="314">  │ │ ├── once@1.4.0 </tspan>
-<tspan x="10" y="330">  │ │ └── path-is-absolute@1.0.1 </tspan>
-<tspan x="10" y="346">  │ ├── lodash@4.17.4 </tspan>
-<tspan x="10" y="362">  │ ├─┬ readable-stream@2.2.6 </tspan>
-<tspan x="10" y="378">  │ │ ├── buffer-shims@1.0.0 </tspan>
-<tspan x="10" y="394">  │ │ ├── core-util-is@1.0.2 </tspan>
-<tspan x="10" y="410">  │ │ ├── isarray@1.0.0 </tspan>
-<tspan x="10" y="426">  │ │ ├── process-nextick-args@1.0.7 </tspan>
-<tspan x="10" y="442">  │ │ ├── string_decoder@0.10.31 </tspan>
-<tspan x="10" y="458">  │ │ └── util-deprecate@1.0.2 </tspan>
-<tspan x="10" y="474">  │ ├─┬ tar-stream@1.5.2 </tspan>
-<tspan x="10" y="490">  │ │ ├── bl@1.2.0 </tspan>
-<tspan x="10" y="506">  │ │ ├── end-of-stream@1.4.0 </tspan>
-<tspan x="10" y="522">  │ │ └── xtend@4.0.1 </tspan>
-<tspan x="10" y="538">  │ ├── walkdir@0.0.11 </tspan>
-<tspan x="10" y="554">  │ └─┬ zip-stream@1.1.1 </tspan>
-<tspan x="10" y="570">  │   └─┬ compress-commons@1.2.0 </tspan>
-<tspan x="10" y="586">  │     └─┬ crc32-stream@2.0.0 </tspan>
-<tspan x="10" y="602">  │       └── crc@3.4.4 </tspan>
-<tspan x="10" y="618">  ├─┬ fast-csv@2.4.0 </tspan>
-<tspan x="10" y="634">  │ ├─┬ extended@0.0.6 </tspan>
-<tspan x="10" y="650">  │ │ └─┬ extender@0.0.10 </tspan>
-<tspan x="10" y="666">  │ │   └── declare.js@0.0.8 </tspan>
-<tspan x="10" y="682">  │ ├── is-extended@0.0.10 </tspan>
-<tspan x="10" y="698">  │ ├─┬ object-extended@0.0.7 </tspan>
-<tspan x="10" y="714">  │ │ └─┬ array-extended@0.0.11 </tspan>
-<tspan x="10" y="730">  │ │   └── arguments-extended@0.0.3 </tspan>
-<tspan x="10" y="746">  │ └─┬ string-extended@0.0.8 </tspan>
-<tspan x="10" y="762">  │   └── date-extended@0.0.6 </tspan>
-<tspan x="10" y="778">  ├─┬ jszip@3.1.3 </tspan>
-<tspan x="10" y="794">  │ ├── core-js@2.3.0 </tspan>
-<tspan x="10" y="810">  │ ├── es6-promise@3.0.2 </tspan>
-<tspan x="10" y="826">  │ ├─┬ lie@3.1.1 </tspan>
-<tspan x="10" y="842">  │ │ └── immediate@3.0.6 </tspan>
-<tspan x="10" y="858">  │ ├── pako@1.0.5 </tspan>
-<tspan x="10" y="874">  │ └── readable-stream@2.0.6 </tspan>
-<tspan x="10" y="890">  ├── moment@2.18.1 </tspan>
-<tspan x="10" y="906">  ├── promish@5.0.2 </tspan>
-<tspan x="10" y="922">  ├── sax@1.2.2 </tspan>
-<tspan x="10" y="938">  └─┬ unzip2@0.2.5 </tspan>
-<tspan x="10" y="954">    ├─┬ binary@0.3.0 </tspan>
-<tspan x="10" y="970">    │ ├── buffers@0.1.1 </tspan>
-<tspan x="10" y="986">    │ └─┬ chainsaw@0.1.0 </tspan>
-<tspan x="10" y="1002">    │   └── traverse@0.3.9 </tspan>
-<tspan x="10" y="1018">    ├─┬ fstream@0.1.31 </tspan>
-<tspan x="10" y="1034">    │ ├─┬ graceful-fs@3.0.11 </tspan>
-<tspan x="10" y="1050">    │ │ └── natives@1.1.0 </tspan>
-<tspan x="10" y="1066">    │ ├─┬ mkdirp@0.5.1 </tspan>
-<tspan x="10" y="1082">    │ │ └── minimist@0.0.8 </tspan>
-<tspan x="10" y="1098">    │ └── rimraf@2.6.1 </tspan>
-<tspan x="10" y="1114">    ├─┬ match-stream@0.0.2 </tspan>
-<tspan x="10" y="1130">    │ └─┬ readable-stream@1.0.34 </tspan>
-<tspan x="10" y="1146">    │   └── isarray@0.0.1 </tspan>
-<tspan x="10" y="1162">    ├─┬ pullstream@0.4.1 </tspan>
-<tspan x="10" y="1178">    │ ├── over@0.0.5 </tspan>
-<tspan x="10" y="1194">    │ ├─┬ readable-stream@1.0.34 </tspan>
-<tspan x="10" y="1210">    │ │ └── isarray@0.0.1 </tspan>
-<tspan x="10" y="1226">    │ └─┬ slice-stream@1.0.0 </tspan>
-<tspan x="10" y="1242">    │   └─┬ readable-stream@1.0.34 </tspan>
-<tspan x="10" y="1258">    │     └── isarray@0.0.1 </tspan>
-<tspan x="10" y="1274">    ├─┬ readable-stream@1.0.34 </tspan>
-<tspan x="10" y="1290">    │ └── isarray@0.0.1 </tspan>
-<tspan x="10" y="1306">    └── setimmediate@1.0.5</tspan>
+<tspan x="10" y="26">26 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ exceljs@0.4.3 </tspan>
+<tspan x="10" y="90">  ├─┬ archiver@1.3.0 </tspan>
+<tspan x="10" y="106">  │ ├─┬ archiver-utils@1.3.0 </tspan>
+<tspan x="10" y="122">  │ │ ├── graceful-fs@4.1.11 </tspan>
+<tspan x="10" y="138">  │ │ ├── lazystream@1.0.0 </tspan>
+<tspan x="10" y="154">  │ │ └─┬ normalize-path@2.1.1 </tspan>
+<tspan x="10" y="170">  │ │   └── remove-trailing-separator@1.0.1 </tspan>
+<tspan x="10" y="186">  │ ├── async@2.3.0 </tspan>
+<tspan x="10" y="202">  │ ├── buffer-crc32@0.2.13 </tspan>
+<tspan x="10" y="218">  │ ├─┬ glob@7.1.1 </tspan>
+<tspan x="10" y="234">  │ │ ├── fs.realpath@1.0.0 </tspan>
+<tspan x="10" y="250">  │ │ ├─┬ inflight@1.0.6 </tspan>
+<tspan x="10" y="266">  │ │ │ └── wrappy@1.0.2 </tspan>
+<tspan x="10" y="282">  │ │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="298">  │ │ ├─┬ minimatch@3.0.3 </tspan>
+<tspan x="10" y="314">  │ │ │ └─┬ brace-expansion@1.1.7 </tspan>
+<tspan x="10" y="330">  │ │ │   ├── balanced-match@0.4.2 </tspan>
+<tspan x="10" y="346">  │ │ │   └── concat-map@0.0.1 </tspan>
+<tspan x="10" y="362">  │ │ ├── once@1.4.0 </tspan>
+<tspan x="10" y="378">  │ │ └── path-is-absolute@1.0.1 </tspan>
+<tspan x="10" y="394">  │ ├── lodash@4.17.4 </tspan>
+<tspan x="10" y="410">  │ ├─┬ readable-stream@2.2.9 </tspan>
+<tspan x="10" y="426">  │ │ ├── buffer-shims@1.0.0 </tspan>
+<tspan x="10" y="442">  │ │ ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="458">  │ │ ├── isarray@1.0.0 </tspan>
+<tspan x="10" y="474">  │ │ ├── process-nextick-args@1.0.7 </tspan>
+<tspan x="10" y="490">  │ │ ├── string_decoder@1.0.0 </tspan>
+<tspan x="10" y="506">  │ │ └── util-deprecate@1.0.2 </tspan>
+<tspan x="10" y="522">  │ ├─┬ tar-stream@1.5.2 </tspan>
+<tspan x="10" y="538">  │ │ ├── bl@1.2.0 </tspan>
+<tspan x="10" y="554">  │ │ ├── end-of-stream@1.4.0 </tspan>
+<tspan x="10" y="570">  │ │ └── xtend@4.0.1 </tspan>
+<tspan x="10" y="586">  │ ├── walkdir@0.0.11 </tspan>
+<tspan x="10" y="602">  │ └─┬ zip-stream@1.1.1 </tspan>
+<tspan x="10" y="618">  │   └─┬ compress-commons@1.2.0 </tspan>
+<tspan x="10" y="634">  │     └─┬ crc32-stream@2.0.0 </tspan>
+<tspan x="10" y="650">  │       └── crc@3.4.4 </tspan>
+<tspan x="10" y="666">  ├─┬ fast-csv@2.4.0 </tspan>
+<tspan x="10" y="682">  │ ├─┬ extended@0.0.6 </tspan>
+<tspan x="10" y="698">  │ │ └─┬ extender@0.0.10 </tspan>
+<tspan x="10" y="714">  │ │   └── declare.js@0.0.8 </tspan>
+<tspan x="10" y="730">  │ ├── is-extended@0.0.10 </tspan>
+<tspan x="10" y="746">  │ ├─┬ object-extended@0.0.7 </tspan>
+<tspan x="10" y="762">  │ │ └─┬ array-extended@0.0.11 </tspan>
+<tspan x="10" y="778">  │ │   └── arguments-extended@0.0.3 </tspan>
+<tspan x="10" y="794">  │ └─┬ string-extended@0.0.8 </tspan>
+<tspan x="10" y="810">  │   └── date-extended@0.0.6 </tspan>
+<tspan x="10" y="826">  ├─┬ jszip@3.1.3 </tspan>
+<tspan x="10" y="842">  │ ├── core-js@2.3.0 </tspan>
+<tspan x="10" y="858">  │ ├── es6-promise@3.0.2 </tspan>
+<tspan x="10" y="874">  │ ├─┬ lie@3.1.1 </tspan>
+<tspan x="10" y="890">  │ │ └── immediate@3.0.6 </tspan>
+<tspan x="10" y="906">  │ ├── pako@1.0.5 </tspan>
+<tspan x="10" y="922">  │ └─┬ readable-stream@2.0.6 </tspan>
+<tspan x="10" y="938">  │   └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="954">  ├── moment@2.18.1 </tspan>
+<tspan x="10" y="970">  ├── promish@5.0.2 </tspan>
+<tspan x="10" y="986">  ├── sax@1.2.2 </tspan>
+<tspan x="10" y="1002">  └─┬ unzip2@0.2.5 </tspan>
+<tspan x="10" y="1018">    ├─┬ binary@0.3.0 </tspan>
+<tspan x="10" y="1034">    │ ├── buffers@0.1.1 </tspan>
+<tspan x="10" y="1050">    │ └─┬ chainsaw@0.1.0 </tspan>
+<tspan x="10" y="1066">    │   └── traverse@0.3.9 </tspan>
+<tspan x="10" y="1082">    ├─┬ fstream@0.1.31 </tspan>
+<tspan x="10" y="1098">    │ ├─┬ graceful-fs@3.0.11 </tspan>
+<tspan x="10" y="1114">    │ │ └── natives@1.1.0 </tspan>
+<tspan x="10" y="1130">    │ ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="1146">    │ │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="1162">    │ └── rimraf@2.6.1 </tspan>
+<tspan x="10" y="1178">    ├─┬ match-stream@0.0.2 </tspan>
+<tspan x="10" y="1194">    │ └─┬ readable-stream@1.0.34 </tspan>
+<tspan x="10" y="1210">    │   ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="1226">    │   └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="1242">    ├─┬ pullstream@0.4.1 </tspan>
+<tspan x="10" y="1258">    │ ├── over@0.0.5 </tspan>
+<tspan x="10" y="1274">    │ ├─┬ readable-stream@1.0.34 </tspan>
+<tspan x="10" y="1290">    │ │ ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="1306">    │ │ └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="1322">    │ └─┬ slice-stream@1.0.0 </tspan>
+<tspan x="10" y="1338">    │   └─┬ readable-stream@1.0.34 </tspan>
+<tspan x="10" y="1354">    │     ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="1370">    │     └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="1386">    ├─┬ readable-stream@1.0.34 </tspan>
+<tspan x="10" y="1402">    │ ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="1418">    │ └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="1434">    └── setimmediate@1.0.5</tspan>
 </text>
 </svg>
