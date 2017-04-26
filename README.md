@@ -1,8 +1,8 @@
 # npmdoc-exceljs
 
-api documentation for  [exceljs (v0.4.3)](https://github.com/guyonroche/exceljs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-exceljs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-exceljs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-exceljs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-exceljs)
+#### basic api documentation for  [exceljs (v0.4.4)](https://github.com/guyonroche/exceljs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-exceljs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-exceljs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-exceljs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-exceljs)
 
-Excel Workbook Manager - Read and Write xlsx and csv Files.
+#### Excel Workbook Manager - Read and Write xlsx and csv Files.
 
 [![NPM](https://nodei.co/npm/exceljs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/exceljs)
 
@@ -67,8 +67,8 @@ Excel Workbook Manager - Read and Write xlsx and csv Files.
     },
     "directories": {},
     "dist": {
-        "shasum": "a6768ff1483b71e7dced97c1551b73ad25b7c022",
-        "tarball": "https://registry.npmjs.org/exceljs/-/exceljs-0.4.3.tgz"
+        "shasum": "1ca0a9ecf03cb07318d190576c60180b6e9eb67c",
+        "tarball": "https://registry.npmjs.org/exceljs/-/exceljs-0.4.4.tgz"
     },
     "files": [
         "excel.js",
@@ -78,7 +78,7 @@ Excel Workbook Manager - Read and Write xlsx and csv Files.
         "README.md",
         "MODEL.md"
     ],
-    "gitHead": "7fde8ee62f87e6d8130cb7cccfde40760c9ce23f",
+    "gitHead": "8d08034554f471b4bdb1a632ecf749df35a6dd3a",
     "homepage": "https://github.com/guyonroche/exceljs#readme",
     "keywords": [
         "xlsx",
@@ -132,7 +132,8 @@ Excel Workbook Manager - Read and Write xlsx and csv Files.
         "test": "npm run unit-test && npm run integration-test && npm run end-to-end-test && npm run browser-test",
         "unit-test": "mocha spec/unit --recursive"
     },
-    "version": "0.4.3"
+    "version": "0.4.4",
+    "bin": {}
 }
 ```
 
